@@ -1,0 +1,10 @@
+<ul *ngFor="let product of Products; let i = index">
+  {{
+    i + 1
+  }}
+  <li>
+    <img src="{{ product.image }}" style="height: 40px; width: 40px" />
+  </li>
+  <span><button (click)="AddCart(product.id)">+</button></span>
+  &nbsp;&nbsp;<span><button (click)="RemoveCart(product.id)">-</button></span>
+</ul>
