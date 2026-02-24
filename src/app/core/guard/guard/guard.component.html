@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 class="header text-primary">CanActivate</h2>
+  <p>
+    CanActivate is used to control whether a user can access a specific route.
+    It checks conditions like authentication or authorization before allowing
+    navigation.
+  </p>
+  <hr />
+  <h2 class="header text-primary">CanActivateChild</h2>
+  <p>
+    CanActivateChild is used to control access to all child routes under a
+    parent route. It helps avoid repeating the same guard logic for multiple
+    child routes.
+  </p>
+  <hr />
+  <h2 class="header text-primary">CanDeactivate</h2>
+  <p>
+    CanDeactivate is used to prevent users from leaving a route when there are
+    unsaved changes. It runs before navigating away from a page.
+  </p>
+  <hr />
+  <h2 class="header text-primary">CanLoad</h2>
+  <p>
+    CanLoad is used to prevent lazy-loaded modules from being loaded if the user
+    is not authorized. It improves security and application performance.
+  </p>
+  <hr />
+  <h2 class="header text-primary">Resolve</h2>
+  <p>
+    Resolve is used to fetch required data before a route is activated. The page
+    loads only after the data is successfully retrieved.
+  </p>
+  <hr />
+  <h2 class="header text-primary">CanMatch</h2>
+  <p>
+    CanMatch is used to decide which route configuration should be matched
+    before navigation. It is useful when multiple routes share the same path.
+  </p>
+</div>
