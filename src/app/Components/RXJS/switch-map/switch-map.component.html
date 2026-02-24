@@ -1,0 +1,9 @@
+<input type="text" placeholder="Search..." (input)="onSearch($event)"/>
+<div>
+  <h2>Json Placeholder details</h2>
+</div>
+<div>
+  <ul *ngFor="let item of jsonDetails">
+    <li>{{ item.title }}</li>
+  </ul>
+</div>

@@ -1,4 +1,21 @@
-<h2>Header</h2>
+<!-- <h2>Header</h2>
     <p>🛒 Cart Count: {{ CartCount }}</p>
 <button (click)="ThemeChange()">click Me</button>
-<app-product></app-product>
+<app-product></app-product> -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img
+        src="https://rxjs.dev/assets/images/favicons/favicon-192x192.png"
+        class="navbar-brand"
+        routerLink="home"
+      />
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="signal">Signals</a></li>
+      <li><a routerLink="switch-map">Switch Map</a></li>
+      <li><a routerLink="cancel-api-call">Cancel Pre API Call</a></li>
+      <li><a routerLink="guard">Guards</a></li>
+    </ul>
+  </div>
+</nav>

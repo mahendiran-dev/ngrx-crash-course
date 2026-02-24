@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="dropdown">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      type="button"
+      data-toggle="dropdown"
+    >
+      Choose user <span class="caret"></span>
+    </button>
+
+    <select (change)="onSelect($event)">
+      <option value="1">User 1</option>
+      <option value="2">User 2</option>
+      <option value="3">User 3</option>
+      <option value="4">User 4</option>
+    </select>
+
+    <pre>{{ userDetails | json }}</pre>
+  </div>
+</div>
